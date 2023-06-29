@@ -30,6 +30,7 @@ function App() {
         <WeightConverter />
       </div>
     </div>
+    <footer>This project was developed by Ernesto Ibarra and coded by <a href="https://github.com/alinebsv" target="_blank" rel="noreferrer">Aline Vieira</a></footer>
     </div>
     );
 }

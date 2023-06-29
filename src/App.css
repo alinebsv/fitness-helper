@@ -50,6 +50,17 @@ max-width: 500px;
 
 }
 
+footer {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 13px;
+    color: #8D99AE;
+}
+
+footer a {
+    color:#2B2D42;
+}
+
 @media (max-width: 375px) {
     .container {
         max-width: 300px;
