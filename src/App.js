@@ -25,8 +25,8 @@ function App() {
           </div>
     </div>
     <div className="row">
-      <div className="col text-center mt-5 weightConverter">
-        <h5>Need to know your weight in lbs?</h5>
+      <div className="col text-center mt-5 weightConverter d-flex justify-content-center">
+        
         <WeightConverter />
       </div>
     </div>

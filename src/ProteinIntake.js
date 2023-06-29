@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./ProteinIntake.css"
+import "./ConverterForms.css"
 
 export default function ProteinIntake() {
 let [weight, setWeight] = useState(null);
@@ -24,11 +24,11 @@ let [protein, setProtein] = useState(0);
     if (loaded) {
         return (
             <div className="ResponsePage">
-            <div className="calculatedProtein">Your daily protein intake should be of {protein}g per day for your weight of {weight}lb</div>
-            <button className="btn btn-primary" onClick={returnToHome}>Recalculate</button></div>);
+            <div className="CalculatedText">Your daily protein intake should be of <span className="resultText">{protein}g</span> per day for your weight of <span className="resultText">{weight}lb</span></div>
+            <button className="btn btn-primary recalculateBtn" onClick={returnToHome}>Recalculate</button></div>);
     }
     return(
-        <div className="ProteinIntake">
+        <div className="Converter">
             <form onSubmit={handleSubmit}>
                 <label for="weight" className="enterWeight">Enter your weight in <strong>lbs</strong></label>
                 <br />

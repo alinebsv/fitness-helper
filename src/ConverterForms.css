@@ -1,0 +1,33 @@
+.Converter {
+    color: #2B2D42;
+}
+
+.weightForm {
+    width: 100px;
+    height: 35px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+
+.calculateBtn, .recalculateBtn {
+    margin: 10px;
+    background-color: #D90429;
+    border: #D90429;
+
+}
+
+.calculateBtn:hover, .recalculateBtn:hover {
+    background-color: #EF233C;
+    border: #EF233C;
+}
+
+.CalculatedText {
+    font-size: 15px;
+}
+
+
+.resultText {
+    color: #D90429;
+    font-weight: bold;
+}

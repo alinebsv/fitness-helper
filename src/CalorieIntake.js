@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./CalorieIntake.css";
+import "./ConverterForms.css";
 
 export default function CalorieIntake() {
 let [weight, setWeight] = useState(0);
@@ -28,13 +28,14 @@ function returnToHome(event) {
 if (loaded) {
     return (
         <div className="ResponsePage">
-            <div className="CalculatedCalories">Your daily calorie intake to maintain your weight of {weight}lb is of {calories} calories. For weight loss, your ideal daily calorie intake is of {cutCalories} calories.</div>
-            <button className="btn btn-primary" onClick={returnToHome}>Recalculate</button>
+            <div className="CalculatedText">Daily <span className="resultText">maintenance</span> calorie intake: <span className="resultText">{calories} calories</span> . 
+            <br /> Daily <span className="resultText">weight loss</span> calorie intake: <span className="resultText">{cutCalories} calories</span>.</div>
+            <button className="btn btn-primary recalculateBtn" onClick={returnToHome}>Recalculate</button>
         </div>
     );
 } else {
     return(
-        <div className="CalorieIntake">
+        <div className="Converter">
             <form onSubmit={handleSubmit}>
                 <label for="weight" className="enterWeight">Enter your weight in <strong>lbs</strong></label>
                 <br />
