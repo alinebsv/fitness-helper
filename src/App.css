@@ -49,3 +49,25 @@ max-width: 500px;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 
 }
+
+@media (max-width: 375px) {
+    .container {
+        max-width: 300px;
+    }
+    
+    h1 {
+        font-size: 35px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    .weightConverter {
+        max-width: 300px;
+    }
+}
