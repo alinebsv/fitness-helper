@@ -1,25 +1,37 @@
-import logo from './logo.svg';
+import React from "react";
+import ProteinIntake from "./ProteinIntake";
+import CalorieIntake from "./CalorieIntake";
+import WeightConverter from "./WeightConverter";
+
+
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="container">
+      <h1>Fitness Helper</h1>
+      <h2>Calculate your protein and calorie intake</h2>
+      <div className="row">
+        <div className="col-6 mt-4 intakeCalculator">
+          <h3>Calculate your ideal <span className="highlight">protein</span> intake</h3>
+          <ProteinIntake />
+          </div>
+        <div className="col-6 mt-4 intakeCalculator">
+        <h3>Calculate your ideal <span className="highlight">calorie</span> intake</h3>
+
+          <CalorieIntake />
+          </div>
+          </div>
     </div>
-  );
+    <div className="row">
+      <div className="col text-center mt-5 weightConverter">
+        <h5>Need to know your weight in lbs?</h5>
+        <WeightConverter />
+      </div>
+    </div>
+    </div>
+    );
 }
 
 export default App;
